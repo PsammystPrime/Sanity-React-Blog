@@ -27,12 +27,48 @@ export function Nav1(){
     )
 }
 
-
-function App() {
-  return(
-    
-  )
+export function Nav2() {
+return(
+<div className="wrapper row1">
+  <header id="header" className="hoc clear"> 
+    <div id="logo" className="fl_left">
+      <h1><a href="index.html">Doggax</a></h1>
+    </div>
+    <nav id="mainav" className="fl_right">
+      <ul className="clear">
+        <li id={11} className="active"><a href="index.html">Home</a></li>
+        <li id={22}><a className="drop" href="#">Pages</a>
+          <ul>
+            <li id={33}><a href="pages/gallery.html">Gallery</a></li>
+            <li id={44}><a href="pages/full-width.html">Full Width</a></li>
+            <li id={55}><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+            <li id={66}><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+            <li id={77}><a href="pages/basic-grid.html">Basic Grid</a></li>
+          </ul>
+        </li>
+        <li id={88}><a className="drop" href="#">Dropdown</a>
+          <ul>
+            <li id={99}><a href="#">Level 2</a></li>
+            <li id={100}><a className="drop" href="#">Level 2 + Drop</a>
+              <ul>
+                <li id={101}><a href="#">Level 3</a></li>
+                <li id={102}><a href="#">Level 3</a></li>
+                <li id={103}><a href="#">Level 3</a></li>
+              </ul>
+            </li>
+            <li id={104}><a href="#">Level 2</a></li>
+          </ul>
+        </li>
+        <li id={105}><a href="#">Link Text</a></li>
+        <li id={106}><a href="#">Link Text</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+)
 }
+
+
 
 /* <div id= "slides" classNameName="bgded overlay">
   <div  classNameName="hoc clear"> 
