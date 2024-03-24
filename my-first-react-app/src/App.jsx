@@ -142,9 +142,53 @@ export function Authors() {
 
 function App() {
   return(
-
+    <div className="wrapper row3">
+  <section className="hoc container clear"> 
+    <div className="sectiontitle">
+      <h3 className="heading">Vitae ante venenatis</h3>
+      <p>Auctor in mattis nisl sed finibus eu dui eget scelerisque dolor.</p>
+    </div>
+    <ul className="nospace group">
+      <li className="one_third first">
+        <article><a href="#"><img className="inspace-10 btmspace-30 borderedbox" src="./assets/01.png" alt=""/></a>
+          <ul className="nospace btmspace-10 inline pushright font-xs">
+            <li><i className="fa fa-calendar-o"></i> 06/01/45</li>
+            <li><i className="fa fa-comments"></i> <a href="#">4</a></li>
+          </ul>
+          <h6 className="heading font-x1">Purus accumsan quis gravida ac vulputate sed&hellip;</h6>
+          <footer><a className="btn" href="#">Read More &raquo;</a></footer>
+        </article>
+      </li>
+      <li className="one_third">
+        <article><a href="#"><img className="inspace-10 btmspace-30 borderedbox" src="/assets/01.png" alt=""/></a>
+          <ul className="nospace btmspace-10 inline pushright font-xs">
+            <li><i className="fa fa-calendar-o"></i> 06/01/45</li>
+            <li><i className="fa fa-comments"></i> <a href="#">4</a></li>
+          </ul>
+          <h6 className="heading font-x1">Turpis donec id pulvinar metus donec malesuada&hellip;</h6>
+          <footer><a className="btn" href="#">Read More &raquo;</a></footer>
+        </article>
+      </li>
+      <li className="one_third">
+        <article><a href="#"><img className="inspace-10 btmspace-30 borderedbox" src="./assets/01.png" alt=""/></a>
+          <ul className="nospace btmspace-10 inline pushright font-xs">
+            <li><i className="fa fa-calendar-o"></i> 06/01/45</li>
+            <li><i className="fa fa-comments"></i> <a href="#">4</a></li>
+          </ul>
+          <h6 className="heading font-x1">Nisl facilisis arcu faucibus eleifend nullam&hellip;</h6>
+          <footer><a className="btn" href="#">Read More &raquo;</a></footer>
+        </article>
+      </li>
+    </ul>
+  </section>
+</div>
   )
 }
+
+function App() {
+  return(
+    
+  )}
 /* <div id= "slides" classNameName="bgded overlay">
   <div  classNameName="hoc clear"> 
 
