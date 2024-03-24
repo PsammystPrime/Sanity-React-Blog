@@ -68,7 +68,23 @@ return(
 )
 }
 
+export function Greeting() {
+  return(
+    <div className="wrapper bgded overlay" >
+  <article className="hoc container center"> 
+    <h6 className="heading font-x3">Aloha, Welcome to my Blog</h6>
+    <p className="btmspace-30">This is where I document my Frontend Experiences</p>
+    <footer><a className="btn" href="#">Sign in &raquo;</a></footer>
+  </article>
+</div>
+  )
+}
 
+function App() {
+  return(
+    
+  )
+}
 
 /* <div id= "slides" classNameName="bgded overlay">
   <div  classNameName="hoc clear"> 
