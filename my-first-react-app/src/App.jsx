@@ -80,11 +80,48 @@ export function Greeting() {
   )
 }
 
-function App() {
+export function TopStories() {
   return(
-    
+    <div className="wrapper row3">
+  <section className="hoc container clear"> 
+    <div className="sectiontitle">
+      <h3 className="heading">Ante leo bibendum</h3>
+      <p>Nec libero tempus sit amet aliquet enim dignissim suspendisse.</p>
+    </div>
+    <ul className="nospace group services">
+      <li id={200} className="one_third first">
+        <article><a href="#"><i className="icon fa fa-ils"></i></a>
+          <h6 className="heading">Nulla facilisi nunc</h6>
+          <p>Eget auctor sit amet bibendum in quam quisque sit amet posuere felis eget sollicitudin sem [&hellip;]</p>
+          <footer><a href="#">Read More &raquo;</a></footer>
+        </article>
+      </li>
+      <li id={202} className="one_third">
+        <article><a href="#"><i className="icon fa fa-ioxhost"></i></a>
+          <h6 className="heading">Sit amet sollicitudin</h6>
+          <p>Massa in a massa a mauris euismod bibendum id et purus aenean posuere placerat dui vitae [&hellip;]</p>
+          <footer><a href="#">Read More &raquo;</a></footer>
+        </article>
+      </li>
+      <li id={202} className="one_third">
+        <article><a href="#"><i className="icon fa fa-yelp"></i></a>
+          <h6 className="heading">Ligula at consectetur</h6>
+          <p>Elementum sed pretium neque vitae diam suscipit eu vehicula nisl aliquet habitant morbi [&hellip;]</p>
+          <footer><a href="#">Read More &raquo;</a></footer>
+        </article>
+      </li>
+    </ul>
+    <div className="clear"></div>
+  </section>
+</div>
   )
 }
+
+function App() {
+  return(
+
+  )
+  }
 
 /* <div id= "slides" classNameName="bgded overlay">
   <div  classNameName="hoc clear"> 
