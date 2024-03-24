@@ -238,6 +238,19 @@ export function Contact() {
   )
   }
 
+  export function footer() {
+    return(
+<div className="wrapper row5">
+  <div id="copyright" className="hoc clear"> 
+    <p className="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p className="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </div>
+</div>
+    )}
+  
+function App(){
+  
+}
 
  {/* <div id= "slides" classNameName="bgded overlay">
   <div  classNameName="hoc clear"> 
