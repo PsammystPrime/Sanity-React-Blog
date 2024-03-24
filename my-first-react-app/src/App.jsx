@@ -117,12 +117,34 @@ export function TopStories() {
   )
 }
 
+export function Authors() {
+  return(
+    <div className="wrapper bgded overlay" >
+      <article className="hoc container"> 
+        <div className="sectiontitle">
+          <h3 className="heading">Nunc lobortis non</h3>
+          <p>Tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+        <ul className="nospace group">
+          <li id={13} className="one_half first borderedbox inspace-15">
+            <blockquote>Ligula a commodo fusce sed aliquam dolor suspendisse eleifend dignissim mi quis malesuada sed a commodo sem nulla consequat erat at risus fringilla ac accumsan odio tempor proin viverra eros non elit</blockquote>
+            <p className="right bold">John Doe / CEO</p>
+          </li>
+          <li id={14} className="one_half borderedbox inspace-15">
+            <blockquote>Lacinia quis consectetur dolor dignissim vestibulum iaculis quam vel commodo dictum quisque efficitur vestibulum odio sed facilisis nullam justo ipsum maximus sed ullamcorper vitae aliquam eget augue</blockquote>
+            <p className="right bold">Jane Doe / CEO</p>
+          </li>
+        </ul>
+      </article>
+</div>
+  )
+}
+
 function App() {
   return(
 
   )
-  }
-
+}
 /* <div id= "slides" classNameName="bgded overlay">
   <div  classNameName="hoc clear"> 
 
