@@ -8,6 +8,8 @@ import './styles/framework.css'
 import './styles/custom.flexslider.css'
 import './styles/layout.css'
 
+import {Link} from 'react-router-dom'
+
 export function Nav1(){
   return (
     <div className="wrapper row0">
@@ -21,9 +23,9 @@ export function Nav1(){
         </div>
         <div className="fl_right">
           <ul className="nospace">
-            <li id={4}><a href="/"><i className="fa fa-lg fa-home"></i></a></li>
-            <li id={5}><a href="#" title="Login"><i className="fa fa-lg fa-sign-in"></i></a></li>
-            <li id={6}><a href="#" title="Sign Up"><i className="fa fa-lg fa-edit"></i></a></li>
+            <li id={4}><Link to="/"><i className="fa fa-lg fa-home"></i></Link></li>
+            <li id={5}><Link to="#" title="Login"><i className="fa fa-lg fa-sign-in"></i></Link></li>
+            <li id={6}><Link to="#" title="Sign Up"><i className="fa fa-lg fa-edit"></i></Link></li>
           </ul>
         </div>
       </div>
@@ -36,35 +38,35 @@ return(
 <div className="wrapper row1">
   <header id="header" className="hoc clear"> 
     <div id="logo" className="fl_left">
-      <h1><a href="index.html">The Nairobi Times</a></h1>
+      <h1><Link to="index.html">The Nairobi Times</Link></h1>
     </div>
     <nav id="mainav" className="fl_right">
       <ul className="clear">
-        <li id={11} className="active"><a href="/">Home</a></li>
-        <li id={22}><a className="drop" href="#">Pages</a>
+        <li id={11} className="active"><Link to="/">Home</Link></li>
+        <li id={22}><Link className="drop" href="#">Pages</Link>
           <ul>
-            <li id={33}><a href="pages/gallery.html">Gallery</a></li>
-            <li id={44}><a href="pages/full-width.html">Full Width</a></li>
-            <li id={55}><a href="pages/sidebar-left.html">Sidebar Left</a></li>
-            <li id={66}><a href="pages/sidebar-right.html">Sidebar Right</a></li>
-            <li id={77}><a href="pages/basic-grid.html">Basic Grid</a></li>
+            <li id={33}><Link to="pages/gallery.html">Gallery</Link></li>
+            <li id={44}><Link to="pages/full-width.html">Full Width</Link></li>
+            <li id={55}><Link to="pages/sidebar-left.html">Sidebar Left</Link></li>
+            <li id={66}><Link to="pages/sidebar-right.html">Sidebar Right</Link></li>
+            <li id={77}><Link to="pages/basic-grid.html">Basic Grid</Link></li>
           </ul>
         </li>
-        <li id={88}><a className="drop" href="#">CATEGORIES</a>
+        <li id={88}><Link className="drop" href="#">CATEGORIES</Link>
           <ul>
-            <li id={99}><a href="#">Productivity</a></li>
-            <li id={100}><a className="drop" href="#">Software Dev + Technology</a>
+            <li id={99}><Link to="#">Productivity</Link></li>
+            <li id={100}><Link className="drop" href="#">Software Dev + Technology</Link>
               <ul>
-                <li id={101}><a href="#">Frontend Development</a></li>
-                <li id={102}><a href="#">Web3</a></li>
-                <li id={103}><a href="#">Headless CMS</a></li>
+                <li id={101}><Link to="#">Frontend Development</Link></li>
+                <li id={102}><Link to="#">Web3</Link></li>
+                <li id={103}><Link to="#">Headless CMS</Link></li>
               </ul>
             </li>
-            <li id={104}><a href="#">Writing</a></li>
+            <li id={104}><Link to="#">Writing</Link></li>
           </ul>
         </li>
-        <li id={105}><a href="/all">PORTFOLIO</a></li>
-        <li id={106}><a href="/featured">LIVE BLOGS</a></li>
+        <li id={105}><Link to="/all">PORTFOLIO</Link></li>
+        <li id={106}><Link to="/featured">LIVE BLOGS</Link></li>
       </ul>
     </nav>
   </header>
@@ -78,7 +80,7 @@ export function Greeting() {
         <article className="hoc container center"> 
           <h6 className="heading font-x3">Aloha, Welcome to my Blog</h6>
           <p className="btmspace-30">This is where I document my Frontend Experiences</p>
-          <footer><a className="btn" href="#">Explore Repo &raquo;</a></footer>
+          <footer><Link className="btn" href="#">Explore Repo &raquo;</Link></footer>
         </article>
       </div>
   )
@@ -94,24 +96,24 @@ export function TopStories() {
           </div>
           <ul className="nospace group services">
             <li id={200} className="one_third first">
-              <article><a href="#"><i className="icon fa fa-ils"></i></a>
+              <article><Link to="#"><i className="icon fa fa-ils"></i></Link>
                 <h6 className="heading">Devin; how true is it?</h6>
                 <p>Eget auctor sit amet bibendum in quam quisque sit amet posuere felis eget sollicitudin sem [&hellip;]</p>
-                <footer><a href="#">Read More &raquo;</a></footer>
+                <footer><Link to="#">Read More &raquo;</Link></footer>
               </article>
             </li>
             <li id={202} className="one_third">
-              <article><a href="#"><i className="icon fa fa-ioxhost"></i></a>
+              <article><Link to="#"><i className="icon fa fa-ioxhost"></i></Link>
                 <h6 className="heading">Getting started with Solidity</h6>
-                <p>Massa in a massa a mauris euismod bibendum id et purus aenean posuere placerat dui vitae [&hellip;]</p>
-                <footer><a href="#">Read More &raquo;</a></footer>
+                <p>Massa in Link massa Link mauris euismod bibendum id et purus aenean posuere placerat dui vitae [&hellip;]</p>
+                <footer><Link to="#">Read More &raquo;</Link></footer>
               </article>
             </li>
             <li id={202} className="one_third">
-              <article><a href="#"><i className="icon fa fa-yelp"></i></a>
+              <article><Link to="#"><i className="icon fa fa-yelp"></i></Link>
                 <h6 className="heading">Increasing developer Productivity</h6>
                 <p>Elementum sed pretium neque vitae diam suscipit eu vehicula nisl aliquet habitant morbi [&hellip;]</p>
-                <footer><a href="#">Read More &raquo;</a></footer>
+                <footer><Link to="#">Read More &raquo;</Link></footer>
               </article>
             </li>
           </ul>
@@ -131,7 +133,7 @@ export function Authors() {
               </div>
               <ul className="nospace group">
                 <li id={13} className="one_half first borderedbox inspace-15">
-                  <blockquote>Tackle the hard things, that is where growth lies. After conquering repeat. The Sky is not the limit, but a limit. Overcome it!! </blockquote>
+                  <blockquote>Tackle the hard things, that is where growth lies. After conquering repeat. The Sky is not the limit, but Link limit. Overcome it!! </blockquote>
                   <p className="right bold">Psammyst Prime / Developer</p>
                 </li>
                 <li id={14} className="one_half borderedbox inspace-15">
@@ -158,32 +160,32 @@ export function Features() {
                 <img className="inspace-10 btmspace-30 borderedbox" src={hero} alt="img1"/>
                 <ul className="nospace btmspace-10 inline pushright font-xs">
                   <li><i className="fa fa-calendar-o"></i> 06/01/2024</li>
-                  <li><i className="fa fa-comments"></i> <a href="#">19</a></li>
+                  <li><i className="fa fa-comments"></i> <Link to="#">19</Link></li>
                 </ul>
                 <h6 className="heading font-x1">Content Management Systems...&hellip;</h6>
-                <footer><a className="btn" href="#">Read More &raquo;</a></footer>
+                <footer><Link className="btn" href="#">Read More &raquo;</Link></footer>
               </article>
             </li>
             <li className="one_third">
               <article>
-                <a href="#"><img className="inspace-10 btmspace-30 borderedbox" src={hero} alt=""/></a>
+                <Link to="#"><img className="inspace-10 btmspace-30 borderedbox" src={hero} alt=""/></Link>
                 <ul className="nospace btmspace-10 inline pushright font-xs">
                   <li><i className="fa fa-calendar-o"></i> 06/01/2023</li>
-                  <li><i className="fa fa-comments"></i> <a href="#">392</a></li>
+                  <li><i className="fa fa-comments"></i> <Link to="#">392</Link></li>
                 </ul>
                 <h6 className="heading font-x1">Getting Started with Webpack...&hellip;</h6>
-                <footer><a className="btn" href="#">Read More &raquo;</a></footer>
+                <footer><Link className="btn" href="#">Read More &raquo;</Link></footer>
               </article>
             </li>
             <li className="one_third">
               <article>
-                <a href="#"><img className="inspace-10 btmspace-30 borderedbox" src={hero} alt=""/></a>
+                <Link to="#"><img className="inspace-10 btmspace-30 borderedbox" src={hero} alt=""/></Link>
                 <ul className="nospace btmspace-10 inline pushright font-xs">
                   <li><i className="fa fa-calendar-o"></i> 06/01/2024</li>
-                  <li><i className="fa fa-comments"></i> <a href="#">139</a></li>
+                  <li><i className="fa fa-comments"></i> <Link to="#">139</Link></li>
                 </ul>
                 <h6 className="heading font-x1">Getting the Best Audience for your...&hellip;</h6>
-                <footer><a className="btn" href="#">Read More &raquo;</a></footer>
+                <footer><Link className="btn" href="#">Read More &raquo;</Link></footer>
               </article>
             </li>
           </ul>
@@ -227,14 +229,14 @@ export function Contact() {
           <ul className="nospace linklist">
             <li id={42}>
               <article>
-                <h2 className="nospace font-x1"><a href="#">Anonymous client</a></h2>
+                <h2 className="nospace font-x1"><Link to="#">Anonymous client</Link></h2>
                 <time className="font-xs block btmspace-10" /*datetime="2045-04-06"*/ >Friday, 6<sup>th</sup> April 2022</time>
                 <p className="nospace">This guys are the best professionals [&hellip;]</p>
               </article>
             </li>
             <li id={43}>
               <article>
-                <h2 className="nospace font-x1"><a href="#">Kenyan Hustler</a></h2>
+                <h2 className="nospace font-x1"><Link to="#">Kenyan Hustler</Link></h2>
                 <time className="font-xs block btmspace-10" /*datetime=2045-04-05"*/ >Thursday, 5<sup>th</sup> April 2024</time>
                 <p className="nospace">Clear and concise News[&hellip;]</p>
               </article>
@@ -251,13 +253,13 @@ export function Footer() {
       <div className="wrapper row5">
         <div id="copyright" className="hoc clear"> 
           <p className="fl_left">Copyright &copy; 2024 - All Rights Reserved </p>
-          <p className="fl_right">Made with love by <a target="_blank" href="https://www.github.com/psammystprime/">PsammystPrime</a></p>
+          <p className="fl_right">Made with love by <Link target="_blank" href="https://www.github.com/psammystprime/">PsammystPrime</Link></p>
         </div>
       </div>
     )}
   
 export function Return(){
-     return  <a id="backtotop" href="#top"><i className="fa fa-chevron-up"></i></a>
+     return  <Link id="backtotop" href="#top"><i className="fa fa-chevron-up"></i></Link>
      
 }
 function App(){
@@ -287,7 +289,7 @@ function App(){
             <p>Lacinia</p>
             <h3 classNameName="heading">Maximus dapibus justo</h3>
             <p>Tellus magna at velit praesent non justo</p>
-            <footer><a classNameName="btn" href="#">Pretium pharetra</a></footer>
+            <footer><Link classNameName="btn" href="#">Pretium pharetra</Link></footer>
           </article>
         </li>
         <li id={} id = {12}>
@@ -295,7 +297,7 @@ function App(){
             <p>Lacinia</p>
             <h3 classNameName="heading">Imperdiet vitae suspendisse</h3>
             <p>Non tincidunt dui nullam tortor eget aliquam</p>
-            <footer><a classNameName="btn" href="#">Aliquet consectetur</a></footer>
+            <footer><Link classNameName="btn" href="#">Aliquet consectetur</Link></footer>
           </article>
         </li>
         <li id={} id={13}>
@@ -303,7 +305,7 @@ function App(){
             <p>Lacinia</p>
             <h3 classNameName="heading">Vivamus gravida ex quis</h3>
             <p>Sit amet at mauris vivamus eget leo nunc</p>
-            <footer><a classNameName="btn" href="#">Lacinia facilisis</a></footer>
+            <footer><Link classNameName="btn" href="#">Lacinia facilisis</Link></footer>
           </article>
         </li>
       </ul>
