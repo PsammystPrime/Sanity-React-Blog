@@ -2,6 +2,8 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import './styles/framework.css'
+import './styles/custom.flexslider.css'
 import './styles/layout.css'
 
 export function Nav1(){
@@ -187,54 +189,58 @@ export function Featured() {
 
 export function Contact() {
   return(
-        <div className="wrapper row4 bgded overlay">
-    <div id="footer" className="hoc clear"/> 
-      <div className="one_third first">
-        <h6 className="heading">Quis vestibulum ligula</h6>
-        <ul className="nospace linklist contact">
-          <li id={32}><i className="fa fa-map-marker"></i>
-            <address>
-            Street Name &amp; Number, Town, Postcode/Zip
-            </address>
-          </li>
-          <li id={33}><i className="fa fa-phone"></i> +00 (123) 456 7890</li>
-          <li id={34}><i className="fa fa-fax"></i> +00 (123) 456 7890</li>
-          <li id={35}><i className="fa fa-envelope-o"></i> info@domain.com</li>
-        </ul>
-      </div>
-      <div className="one_third">
-        <h6 className="heading">Pharetra eget nulla</h6>
-        <p className="nospace btmspace-30">Feugiat tellus orci eget maximus est posuere quis nunc ornare erat lorem.</p>
-        <form method="post" action="#">
-          <fieldset>
-            <legend>Newsletter:</legend>
-            <input className="btmspace-15" type="text" value="" placeholder="Name" />
-            <input className="btmspace-15" type="text" value="" placeholder="Email" />
-            
-            <button type="submit" value="submit">Submit</button>
-          </fieldset>
-        </form>
-      </div>
-      <div className="one_third">
-        <h6 className="heading">Viverra justo nec maximus</h6>
-        <ul className="nospace linklist">
-          <li id={42}>
-            <article>
-              <h2 className="nospace font-x1"><a href="#">Dictum vivamus condimentum</a></h2>
-              <time className="font-xs block btmspace-10" /*datetime="2045-04-06"*/ >Friday, 6<sup>th</sup> April 2045</time>
-              <p className="nospace">Velit consequat sit amet praesent consectetur lacinia nulla vitae [&hellip;]</p>
-            </article>
-          </li>
-          <li id={43}>
-            <article>
-              <h2 className="nospace font-x1"><a href="#">Massa arcu quis imperdiet</a></h2>
-              <time className="font-xs block btmspace-10" /*datetime=2045-04-05"*/ >Thursday, 5<sup>th</sup> April 2045</time>
-              <p className="nospace">Bibendum ipsum mattis a mauris ut nibh non sem iaculis finibus nullam [&hellip;]</p>
-            </article>
-          </li>
-        </ul>
-      </div>
+    <div className="wrapper row4 bgded overlay">
+      <div id="footer" className="hoc clear"> 
+        <div className="one_third first">
+          <h6 className="heading">Quis vestibulum ligula</h6>
+          <ul className="nospace linklist contact">
+            <li id={32}><i className="fa fa-map-marker"></i>
+              <address>
+              Street Name &amp; Number, Town, Postcode/Zip
+              </address>
+            {/* <hr /> */}
+            </li>
+            <li id={33}><i className="fa fa-phone"></i> +00 (123) 456 7890</li>
+            {/* <hr /> */}
+            <li id={34}><i className="fa fa-fax"></i> +00 (123) 456 7890</li>
+            {/* <hr /> */}
+            <li id={35}><i className="fa fa-envelope-o"></i> info@domain.com</li>
+          </ul>
         </div>
+        <div className="one_third">
+          <h6 className="heading">Pharetra eget nulla</h6>
+          <p className="nospace btmspace-30">Feugiat tellus orci eget maximus est posuere quis nunc ornare erat lorem.</p>
+          <form method="post" action="#">
+            <fieldset>
+              <legend>Newsletter:</legend>
+              <input className="btmspace-15" type="text" value="" placeholder="Name" />
+              <input className="btmspace-15" type="text" value="" placeholder="Email" />
+              
+              <button type="submit" value="submit">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+        <div className="one_third">
+          <h6 className="heading">Viverra justo nec maximus</h6>
+          <ul className="nospace linklist">
+            <li id={42}>
+              <article>
+                <h2 className="nospace font-x1"><a href="#">Dictum vivamus condimentum</a></h2>
+                <time className="font-xs block btmspace-10" /*datetime="2045-04-06"*/ >Friday, 6<sup>th</sup> April 2045</time>
+                <p className="nospace">Velit consequat sit amet praesent consectetur lacinia nulla vitae [&hellip;]</p>
+              </article>
+            </li>
+            <li id={43}>
+              <article>
+                <h2 className="nospace font-x1"><a href="#">Massa arcu quis imperdiet</a></h2>
+                <time className="font-xs block btmspace-10" /*datetime=2045-04-05"*/ >Thursday, 5<sup>th</sup> April 2045</time>
+                <p className="nospace">Bibendum ipsum mattis a mauris ut nibh non sem iaculis finibus nullam [&hellip;]</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   )
   }
 
@@ -249,22 +255,22 @@ export function Footer() {
     )}
   
 export function Return(){
-      <a id="backtotop" href="#top"><i className="fa fa-chevron-up"></i></a>
-      return 
+     return  <a id="backtotop" href="#top"><i className="fa fa-chevron-up"></i></a>
+     
 }
 function App(){
   return (
-    <div id='top'>
-        <Nav1/>
-        <Nav2/>
-        <Greeting/>
-        <TopStories/>
-        <Authors/>
-        <Featured/>
-        <Contact/>
-        <Footer/>
-        <Return/>
-    </div>
+    <main id='top'>
+      <Nav1/>
+      <Nav2/>
+      <Greeting/>
+      <TopStories/>
+      <Authors/>
+      <Featured/>
+      <Contact/>
+      <Footer/>
+      <Return/>
+    </main>
   )
   
 }
