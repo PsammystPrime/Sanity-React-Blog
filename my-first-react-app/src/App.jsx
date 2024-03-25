@@ -1,6 +1,8 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+import hero from './assets/01.png'
+// import hero2 from './assets/320x220.png'
 import './App.css'
 import './styles/framework.css'
 import './styles/custom.flexslider.css'
@@ -152,7 +154,8 @@ export function Featured() {
           </div>
           <ul className="nospace group">
             <li className="one_third first">
-              <article><a href="#"><img className="inspace-10 btmspace-30 borderedbox" src="./assets/01.png" alt=""/></a>
+              <article>
+                <img className="inspace-10 btmspace-30 borderedbox" src={hero} alt="img1"/>
                 <ul className="nospace btmspace-10 inline pushright font-xs">
                   <li><i className="fa fa-calendar-o"></i> 06/01/2024</li>
                   <li><i className="fa fa-comments"></i> <a href="#">19</a></li>
@@ -162,7 +165,8 @@ export function Featured() {
               </article>
             </li>
             <li className="one_third">
-              <article><a href="#"><img className="inspace-10 btmspace-30 borderedbox" src="/assets/01.png" alt=""/></a>
+              <article>
+                <a href="#"><img className="inspace-10 btmspace-30 borderedbox" src={hero} alt=""/></a>
                 <ul className="nospace btmspace-10 inline pushright font-xs">
                   <li><i className="fa fa-calendar-o"></i> 06/01/2023</li>
                   <li><i className="fa fa-comments"></i> <a href="#">392</a></li>
@@ -172,7 +176,8 @@ export function Featured() {
               </article>
             </li>
             <li className="one_third">
-              <article><a href="#"><img className="inspace-10 btmspace-30 borderedbox" src="./assets/01.png" alt=""/></a>
+              <article>
+                <a href="#"><img className="inspace-10 btmspace-30 borderedbox" src={hero} alt=""/></a>
                 <ul className="nospace btmspace-10 inline pushright font-xs">
                   <li><i className="fa fa-calendar-o"></i> 06/01/2024</li>
                   <li><i className="fa fa-comments"></i> <a href="#">139</a></li>
