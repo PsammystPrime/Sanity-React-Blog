@@ -12,9 +12,9 @@ export function Nav1(){
       <div id="topbar" className="hoc clear"> 
         <div className="fl_left">
           <ul className="nospace">
-            <li id={1}><i className="fa fa-clock-o"></i> Mon. - Fri. 8am - 5pm</li>
-            <li id={2}><i className="fa fa-phone"></i> +00 (123) 456 7890</li>
-            <li id={3}><i className="fa fa-envelope-o"></i> info@domain.com</li>
+            <li id={1}><i className="fa fa-clock-o"></i> Mon. - Sun. 8am - 5pm</li>
+            <li id={2}><i className="fa fa-phone"></i> +(254) 7 1604 1426</li>
+            <li id={3}><i className="fa fa-envelope-o"></i> PsammystPrime384@gmail.com</li>
           </ul>
         </div>
         <div className="fl_right">
@@ -34,7 +34,7 @@ return(
 <div className="wrapper row1">
   <header id="header" className="hoc clear"> 
     <div id="logo" className="fl_left">
-      <h1><a href="index.html">Doggax</a></h1>
+      <h1><a href="index.html">The Nairobi Times</a></h1>
     </div>
     <nav id="mainav" className="fl_right">
       <ul className="clear">
@@ -48,21 +48,21 @@ return(
             <li id={77}><a href="pages/basic-grid.html">Basic Grid</a></li>
           </ul>
         </li>
-        <li id={88}><a className="drop" href="#">Dropdown</a>
+        <li id={88}><a className="drop" href="#">CATEGORIES</a>
           <ul>
-            <li id={99}><a href="#">Level 2</a></li>
-            <li id={100}><a className="drop" href="#">Level 2 + Drop</a>
+            <li id={99}><a href="#">Productivity</a></li>
+            <li id={100}><a className="drop" href="#">Software Dev + Technology</a>
               <ul>
-                <li id={101}><a href="#">Level 3</a></li>
-                <li id={102}><a href="#">Level 3</a></li>
-                <li id={103}><a href="#">Level 3</a></li>
+                <li id={101}><a href="#">Frontend Development</a></li>
+                <li id={102}><a href="#">Web3</a></li>
+                <li id={103}><a href="#">Headless CMS</a></li>
               </ul>
             </li>
-            <li id={104}><a href="#">Level 2</a></li>
+            <li id={104}><a href="#">Writing</a></li>
           </ul>
         </li>
-        <li id={105}><a href="#">Link Text</a></li>
-        <li id={106}><a href="#">Link Text</a></li>
+        <li id={105}><a href="#">PORTFOLIO</a></li>
+        <li id={106}><a href="#">LIVE BLOGS</a></li>
       </ul>
     </nav>
   </header>
@@ -76,7 +76,7 @@ export function Greeting() {
         <article className="hoc container center"> 
           <h6 className="heading font-x3">Aloha, Welcome to my Blog</h6>
           <p className="btmspace-30">This is where I document my Frontend Experiences</p>
-          <footer><a className="btn" href="#">Sign in &raquo;</a></footer>
+          <footer><a className="btn" href="#">Explore Repo &raquo;</a></footer>
         </article>
       </div>
   )
@@ -87,27 +87,27 @@ export function TopStories() {
       <div className="wrapper row3">
         <section className="hoc container clear"> 
           <div className="sectiontitle">
-            <h3 className="heading">Ante leo bibendum</h3>
-            <p>Nec libero tempus sit amet aliquet enim dignissim suspendisse.</p>
+            <h3 className="heading">Top Stories</h3>
+            <p>Get the Latest in Town Trends all in one place</p>
           </div>
           <ul className="nospace group services">
             <li id={200} className="one_third first">
               <article><a href="#"><i className="icon fa fa-ils"></i></a>
-                <h6 className="heading">Nulla facilisi nunc</h6>
+                <h6 className="heading">Devin; how true is it?</h6>
                 <p>Eget auctor sit amet bibendum in quam quisque sit amet posuere felis eget sollicitudin sem [&hellip;]</p>
                 <footer><a href="#">Read More &raquo;</a></footer>
               </article>
             </li>
             <li id={202} className="one_third">
               <article><a href="#"><i className="icon fa fa-ioxhost"></i></a>
-                <h6 className="heading">Sit amet sollicitudin</h6>
+                <h6 className="heading">Getting started with Solidity</h6>
                 <p>Massa in a massa a mauris euismod bibendum id et purus aenean posuere placerat dui vitae [&hellip;]</p>
                 <footer><a href="#">Read More &raquo;</a></footer>
               </article>
             </li>
             <li id={202} className="one_third">
               <article><a href="#"><i className="icon fa fa-yelp"></i></a>
-                <h6 className="heading">Ligula at consectetur</h6>
+                <h6 className="heading">Increasing developer Productivity</h6>
                 <p>Elementum sed pretium neque vitae diam suscipit eu vehicula nisl aliquet habitant morbi [&hellip;]</p>
                 <footer><a href="#">Read More &raquo;</a></footer>
               </article>
@@ -124,13 +124,13 @@ export function Authors() {
       <div className="wrapper bgded overlay" >
             <article className="hoc container"> 
               <div className="sectiontitle">
-                <h3 className="heading">Nunc lobortis non</h3>
-                <p>Tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <h3 className="heading">Industry Movers Quotes</h3>
+                <p>Get to know what they say when they say.</p>
               </div>
               <ul className="nospace group">
                 <li id={13} className="one_half first borderedbox inspace-15">
-                  <blockquote>Ligula a commodo fusce sed aliquam dolor suspendisse eleifend dignissim mi quis malesuada sed a commodo sem nulla consequat erat at risus fringilla ac accumsan odio tempor proin viverra eros non elit</blockquote>
-                  <p className="right bold">John Doe / CEO</p>
+                  <blockquote>Tackle the hard things, that is where growth lies. After conquering repeat. The Sky is not the limit, but a limit. Overcome it!! </blockquote>
+                  <p className="right bold">Psammyst Prime / Developer</p>
                 </li>
                 <li id={14} className="one_half borderedbox inspace-15">
                   <blockquote>Lacinia quis consectetur dolor dignissim vestibulum iaculis quam vel commodo dictum quisque efficitur vestibulum odio sed facilisis nullam justo ipsum maximus sed ullamcorper vitae aliquam eget augue</blockquote>
@@ -147,37 +147,37 @@ export function Featured() {
       <div className="wrapper row3">
         <section className="hoc container clear"> 
           <div className="sectiontitle">
-            <h3 className="heading">Vitae ante venenatis</h3>
+            <h3 className="heading">FEATURED ARTICLES</h3>
             <p>Auctor in mattis nisl sed finibus eu dui eget scelerisque dolor.</p>
           </div>
           <ul className="nospace group">
             <li className="one_third first">
               <article><a href="#"><img className="inspace-10 btmspace-30 borderedbox" src="./assets/01.png" alt=""/></a>
                 <ul className="nospace btmspace-10 inline pushright font-xs">
-                  <li><i className="fa fa-calendar-o"></i> 06/01/45</li>
-                  <li><i className="fa fa-comments"></i> <a href="#">4</a></li>
+                  <li><i className="fa fa-calendar-o"></i> 06/01/2024</li>
+                  <li><i className="fa fa-comments"></i> <a href="#">19</a></li>
                 </ul>
-                <h6 className="heading font-x1">Purus accumsan quis gravida ac vulputate sed&hellip;</h6>
+                <h6 className="heading font-x1">Content Management Systems...&hellip;</h6>
                 <footer><a className="btn" href="#">Read More &raquo;</a></footer>
               </article>
             </li>
             <li className="one_third">
               <article><a href="#"><img className="inspace-10 btmspace-30 borderedbox" src="/assets/01.png" alt=""/></a>
                 <ul className="nospace btmspace-10 inline pushright font-xs">
-                  <li><i className="fa fa-calendar-o"></i> 06/01/45</li>
-                  <li><i className="fa fa-comments"></i> <a href="#">4</a></li>
+                  <li><i className="fa fa-calendar-o"></i> 06/01/2023</li>
+                  <li><i className="fa fa-comments"></i> <a href="#">392</a></li>
                 </ul>
-                <h6 className="heading font-x1">Turpis donec id pulvinar metus donec malesuada&hellip;</h6>
+                <h6 className="heading font-x1">Getting Started with Webpack...&hellip;</h6>
                 <footer><a className="btn" href="#">Read More &raquo;</a></footer>
               </article>
             </li>
             <li className="one_third">
               <article><a href="#"><img className="inspace-10 btmspace-30 borderedbox" src="./assets/01.png" alt=""/></a>
                 <ul className="nospace btmspace-10 inline pushright font-xs">
-                  <li><i className="fa fa-calendar-o"></i> 06/01/45</li>
-                  <li><i className="fa fa-comments"></i> <a href="#">4</a></li>
+                  <li><i className="fa fa-calendar-o"></i> 06/01/2024</li>
+                  <li><i className="fa fa-comments"></i> <a href="#">139</a></li>
                 </ul>
-                <h6 className="heading font-x1">Nisl facilisis arcu faucibus eleifend nullam&hellip;</h6>
+                <h6 className="heading font-x1">Getting the Best Audience for your...&hellip;</h6>
                 <footer><a className="btn" href="#">Read More &raquo;</a></footer>
               </article>
             </li>
@@ -192,24 +192,21 @@ export function Contact() {
     <div className="wrapper row4 bgded overlay">
       <div id="footer" className="hoc clear"> 
         <div className="one_third first">
-          <h6 className="heading">Quis vestibulum ligula</h6>
+          <h6 className="heading">Contact Us</h6>
           <ul className="nospace linklist contact">
             <li id={32}><i className="fa fa-map-marker"></i>
               <address>
-              Street Name &amp; Number, Town, Postcode/Zip
+              Kahawa Sukari, Nairobi Kenya.
               </address>
-            {/* <hr /> */}
             </li>
-            <li id={33}><i className="fa fa-phone"></i> +00 (123) 456 7890</li>
-            {/* <hr /> */}
-            <li id={34}><i className="fa fa-fax"></i> +00 (123) 456 7890</li>
-            {/* <hr /> */}
-            <li id={35}><i className="fa fa-envelope-o"></i> info@domain.com</li>
+            <li id={33}><i className="fa fa-phone"></i> +(254)7 1604 1426</li>
+            <li id={34}><i className="fa fa-fax"></i> +(254)7 1604 1426</li>
+            <li id={35}><i className="fa fa-envelope-o"></i> PsammystPrime384@gmail.com</li>
           </ul>
         </div>
         <div className="one_third">
-          <h6 className="heading">Pharetra eget nulla</h6>
-          <p className="nospace btmspace-30">Feugiat tellus orci eget maximus est posuere quis nunc ornare erat lorem.</p>
+          <h6 className="heading">Email Us</h6>
+          <p className="nospace btmspace-30">Report an issue or write for us</p>
           <form method="post" action="#">
             <fieldset>
               <legend>Newsletter:</legend>
@@ -221,20 +218,20 @@ export function Contact() {
           </form>
         </div>
         <div className="one_third">
-          <h6 className="heading">Viverra justo nec maximus</h6>
+          <h6 className="heading">What our readers Say</h6>
           <ul className="nospace linklist">
             <li id={42}>
               <article>
-                <h2 className="nospace font-x1"><a href="#">Dictum vivamus condimentum</a></h2>
-                <time className="font-xs block btmspace-10" /*datetime="2045-04-06"*/ >Friday, 6<sup>th</sup> April 2045</time>
-                <p className="nospace">Velit consequat sit amet praesent consectetur lacinia nulla vitae [&hellip;]</p>
+                <h2 className="nospace font-x1"><a href="#">Anonymous client</a></h2>
+                <time className="font-xs block btmspace-10" /*datetime="2045-04-06"*/ >Friday, 6<sup>th</sup> April 2022</time>
+                <p className="nospace">This guys are the best professionals [&hellip;]</p>
               </article>
             </li>
             <li id={43}>
               <article>
-                <h2 className="nospace font-x1"><a href="#">Massa arcu quis imperdiet</a></h2>
-                <time className="font-xs block btmspace-10" /*datetime=2045-04-05"*/ >Thursday, 5<sup>th</sup> April 2045</time>
-                <p className="nospace">Bibendum ipsum mattis a mauris ut nibh non sem iaculis finibus nullam [&hellip;]</p>
+                <h2 className="nospace font-x1"><a href="#">Kenyan Hustler</a></h2>
+                <time className="font-xs block btmspace-10" /*datetime=2045-04-05"*/ >Thursday, 5<sup>th</sup> April 2024</time>
+                <p className="nospace">Clear and concise News[&hellip;]</p>
               </article>
             </li>
           </ul>
@@ -248,8 +245,8 @@ export function Footer() {
     return(
       <div className="wrapper row5">
         <div id="copyright" className="hoc clear"> 
-          <p className="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
-          <p className="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+          <p className="fl_left">Copyright &copy; 2024 - All Rights Reserved </p>
+          <p className="fl_right">Made with love by <a target="_blank" href="https://www.github.com/psammystprime/">PsammystPrime</a></p>
         </div>
       </div>
     )}
