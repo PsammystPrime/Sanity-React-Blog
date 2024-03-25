@@ -21,7 +21,7 @@ export function Nav1(){
         </div>
         <div className="fl_right">
           <ul className="nospace">
-            <li id={4}><a href="#"><i className="fa fa-lg fa-home"></i></a></li>
+            <li id={4}><a href="/"><i className="fa fa-lg fa-home"></i></a></li>
             <li id={5}><a href="#" title="Login"><i className="fa fa-lg fa-sign-in"></i></a></li>
             <li id={6}><a href="#" title="Sign Up"><i className="fa fa-lg fa-edit"></i></a></li>
           </ul>
@@ -40,7 +40,7 @@ return(
     </div>
     <nav id="mainav" className="fl_right">
       <ul className="clear">
-        <li id={11} className="active"><a href="index.html">Home</a></li>
+        <li id={11} className="active"><a href="/">Home</a></li>
         <li id={22}><a className="drop" href="#">Pages</a>
           <ul>
             <li id={33}><a href="pages/gallery.html">Gallery</a></li>
@@ -63,8 +63,8 @@ return(
             <li id={104}><a href="#">Writing</a></li>
           </ul>
         </li>
-        <li id={105}><a href="#">PORTFOLIO</a></li>
-        <li id={106}><a href="#">LIVE BLOGS</a></li>
+        <li id={105}><a href="/all">PORTFOLIO</a></li>
+        <li id={106}><a href="/featured">LIVE BLOGS</a></li>
       </ul>
     </nav>
   </header>
@@ -144,7 +144,7 @@ export function Authors() {
   )
 }
 
-export function Featured() {
+export function Features() {
   return(
       <div className="wrapper row3">
         <section className="hoc container clear"> 
@@ -268,7 +268,7 @@ function App(){
       <Greeting/>
       <TopStories/>
       <Authors/>
-      <Featured/>
+      <Features/>
       <Contact/>
       <Footer/>
       <Return/>
