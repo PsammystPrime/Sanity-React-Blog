@@ -5,7 +5,7 @@ import App from "./App";
 import "./styles/layout.css";
 import Featured from "./components/Featured.jsx";
 import All from "./components/All.jsx";
-import { SinglePost } from "./components/article.jsx";
+import SinglePost from "./components/article.jsx";
 
 const router = createBrowserRouter([
   {
