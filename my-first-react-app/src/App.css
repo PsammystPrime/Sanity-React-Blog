@@ -29,3 +29,34 @@
     height: 200px;
   }
 }
+.singlePost {
+  background-color: rgb(242, 245, 245);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.singlePostTitle {
+  color: hsla(169, 100%, 16%, 1);
+  font-size: 2rem;
+  font-weight: 700;
+  align-self: flex-start;
+}
+.singlePostAuthor {
+  color: rgb(38, 110, 68);
+  font-weight: 600;
+  font-size: large;
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
+.singlePostImg {
+  width: 50rem;
+  height: 30rem;
+}
+.singlePostBody {
+  color: rgba(0, 0, 0, 0.822);
+  font-weight: 600;
+  font-size: large;
+}
