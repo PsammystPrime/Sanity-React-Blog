@@ -1,8 +1,4 @@
-.pic {
-  width: 400px;
-  height: 200px;
-}
-
+/*All articles*/
 .article :first-child {
   display: flex;
   /* background-color: aqua; */
@@ -26,9 +22,10 @@
 @media (min-width: 45em) {
   .pic {
     width: 400px;
-    height: 200px;
+    height: 300px;
   }
 }
+/*Individual articles */
 .singlePost {
   background-color: rgb(242, 245, 245);
   padding: 20px;
