@@ -29,8 +29,13 @@ export function SinglePosts() {
   if (!singlePost) return <div>Loading...</div>;
 
   return (
-
+    <main>
+      <article>
+        <h1>{singlePost.title}</h1>
+        <header>By: {singlePost.author}</header>
+        <img src={singlePost.mainImage.asset.url} alt="" />
+        <p>{singlePost.body}</p>
+      </article>
+    </main>
   );
 }
-
-
