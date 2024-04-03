@@ -31,11 +31,15 @@ export function SinglePosts() {
 
   return (
     <main>
-      <article>
-        <h1>{singlePost.title}</h1>
-        <header>By: {singlePost.author}</header>
-        <img src={singlePost.mainImage.asset.url} alt="" />
-        <p>{singlePost.body}</p>
+      <article className="singlePost">
+        <h1 className="singlePostTitle">{singlePost.title}</h1>
+        <header className="singlePostAuthor">By: {singlePost.author}</header>
+        <img
+          className="singlePostImg"
+          src={singlePost.mainImage.asset.url}
+          alt=""
+        />
+        <p className="singlePostBody">{singlePost.body}</p>
       </article>
     </main>
   );
