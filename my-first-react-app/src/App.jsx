@@ -67,7 +67,7 @@ export function Nav2() {
             </li>
             <li id={22}>
               <Link className="drop" href="#">
-                Pages
+                Trending
               </Link>
               <ul>
                 <li id={33}>
@@ -117,10 +117,10 @@ export function Nav2() {
               </ul>
             </li>
             <li id={105}>
-              <Link to="/all">PORTFOLIO</Link>
+              <Link to="/all">All Blogs</Link>
             </li>
             <li id={106}>
-              <Link to="/featured">LIVE BLOGS</Link>
+              <Link to="/featured">Featured</Link>
             </li>
           </ul>
         </nav>
