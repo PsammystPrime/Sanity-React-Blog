@@ -1,0 +1,31 @@
+.pic {
+  width: 400px;
+  height: 200px;
+}
+
+.article :first-child {
+  display: flex;
+  /* background-color: aqua; */
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding: 0 5px;
+}
+.article span :last-child {
+  /* background-color: antiquewhite; */
+  padding-left: 0px;
+  margin-left: 30px;
+}
+.info {
+  padding-left: 0px;
+  color: rgb(231, 237, 241);
+  font-size: large;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 525px;
+}
+@media (min-width: 45em) {
+  .pic {
+    width: 400px;
+    height: 200px;
+  }
+}
