@@ -1,3 +1,4 @@
+import { Nav2, Footer, Return } from "../App";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import sanityClient from "../client";
@@ -36,6 +37,17 @@ export function SinglePosts() {
         <img src={singlePost.mainImage.asset.url} alt="" />
         <p>{singlePost.body}</p>
       </article>
+    </main>
+  );
+}
+
+export default function SinglePost() {
+  return (
+    <main>
+      <Nav2></Nav2>
+      <SinglePosts />
+      <Footer></Footer>
+      <Return></Return>
     </main>
   );
 }
