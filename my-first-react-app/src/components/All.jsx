@@ -20,7 +20,7 @@ export function Post() {
                 alt
             },
             body,
-            author
+            "author": author->name
         }`
       )
       .then((data) => setPost(data, console.log(data)))
@@ -48,6 +48,7 @@ export function Post() {
                       <span className="info">
                         {post.body[0].children[0].text}
                       </span>
+                      <p>By: {post.author}</p>
                     </span>
                   </span>
                 </Link>
