@@ -32,7 +32,7 @@ export function Post() {
   return (
     <main>
       <section className="container">
-        <h1>Welcome to my blogs</h1>
+        <h1>Welcome to my Featured blogs</h1>
         <h2>Have a great read</h2>
         <div className="posts">
           {postData &&
