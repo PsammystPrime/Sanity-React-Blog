@@ -1,13 +1,15 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import hero from "./assets/01.png";
+// import hero from "./assets/01.png";
 // import hero2 from './assets/320x220.png'
-import "./App.css";
 import "./styles/framework.css";
 import "./styles/custom.flexslider.css";
 import "./styles/layout.css";
+import "./App.css";
 
+import { useState, useEffect } from "react";
+import sanityClient from "./client";
 import { Link } from "react-router-dom";
 
 export function Nav1() {
@@ -241,6 +243,30 @@ export function Authors() {
 }
 
 export function Features() {
+  const [postData, setPost] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[categories[]._ref=='c763b87f-0d8e-4b36-be4a-0a71e064495d']{
+        title,
+        slug,
+        mainImage{
+            asset->{
+                _id,
+                url
+            },
+            alt
+        },
+        body,
+        "author": author->name
+
+
+    }`
+      )
+      .then((data) => setPost(data, console.log(data)))
+      .catch(console.error);
+  }, []);
   return (
     <div className="wrapper row3">
       <section className="hoc container clear">
@@ -250,86 +276,33 @@ export function Features() {
             Auctor in mattis nisl sed finibus eu dui eget scelerisque dolor.
           </p>
         </div>
-        <ul className="nospace group">
-          <li className="one_third first">
-            <article>
-              <img
-                className="inspace-10 btmspace-30 borderedbox"
-                src={hero}
-                alt="img1"
-              />
-              <ul className="nospace btmspace-10 inline pushright font-xs">
-                <li>
-                  <i className="fa fa-calendar-o"></i> 06/01/2024
-                </li>
-                <li>
-                  <i className="fa fa-comments"></i> <Link to="#">19</Link>
-                </li>
-              </ul>
-              <h6 className="heading font-x1">
-                Content Management Systems...&hellip;
-              </h6>
-              <footer>
-                <Link className="btn" href="#">
-                  Read More &raquo;
-                </Link>
-              </footer>
-            </article>
-          </li>
-          <li className="one_third">
-            <article>
-              <Link to="#">
-                <img
-                  className="inspace-10 btmspace-30 borderedbox"
-                  src={hero}
-                  alt=""
-                />
-              </Link>
-              <ul className="nospace btmspace-10 inline pushright font-xs">
-                <li>
-                  <i className="fa fa-calendar-o"></i> 06/01/2023
-                </li>
-                <li>
-                  <i className="fa fa-comments"></i> <Link to="#">392</Link>
-                </li>
-              </ul>
-              <h6 className="heading font-x1">
-                Getting Started with Webpack...&hellip;
-              </h6>
-              <footer>
-                <Link className="btn" href="#">
-                  Read More &raquo;
-                </Link>
-              </footer>
-            </article>
-          </li>
-          <li className="one_third">
-            <article>
-              <Link to="#">
-                <img
-                  className="inspace-10 btmspace-30 borderedbox"
-                  src={hero}
-                  alt=""
-                />
-              </Link>
-              <ul className="nospace btmspace-10 inline pushright font-xs">
-                <li>
-                  <i className="fa fa-calendar-o"></i> 06/01/2024
-                </li>
-                <li>
-                  <i className="fa fa-comments"></i> <Link to="#">139</Link>
-                </li>
-              </ul>
-              <h6 className="heading font-x1">
-                Getting the Best Audience for your...&hellip;
-              </h6>
-              <footer>
-                <Link className="btn" href="#">
-                  Read More &raquo;
-                </Link>
-              </footer>
-            </article>
-          </li>
+        <ul className=" featured">
+          {postData &&
+            postData.map((post, index) => (
+              <li key={index}>
+                <article>
+                  <img
+                    className="ftImage"
+                    src={post.mainImage.asset.url}
+                    alt="img1"
+                  />
+                  <ul className="nospace btmspace-10 inline pushright font-xs">
+                    <li>
+                      <i className="fa fa-calendar-o"></i> 06/01/2024
+                    </li>
+                    <li>
+                      <i className="fa fa-comments"></i> <Link to="#">19</Link>
+                    </li>
+                  </ul>
+                  <h6 className="heading font-x1">{post.title}...&hellip;</h6>
+                  <footer>
+                    <Link className="btn" href="#">
+                      Read More &raquo;
+                    </Link>
+                  </footer>
+                </article>
+              </li>
+            ))}
         </ul>
       </section>
     </div>

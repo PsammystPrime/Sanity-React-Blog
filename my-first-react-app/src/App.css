@@ -57,3 +57,17 @@
   font-weight: 600;
   font-size: large;
 }
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  list-style-type: none;
+}
+.featured > li {
+  max-height: 30rem;
+  object-fit: contain;
+}
+.ftImage {
+  max-height: 15rem;
+  min-width: 30rem;
+}
