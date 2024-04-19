@@ -67,35 +67,13 @@ export function Nav2() {
             <li id={11} className="active">
               <Link to="/">Home</Link>
             </li>
-            <li id={22}>
-              <Link className="drop" href="#">
-                Trending
-              </Link>
-              <ul>
-                <li id={33}>
-                  <Link to="pages/gallery.html">Gallery</Link>
-                </li>
-                <li id={44}>
-                  <Link to="pages/full-width.html">Full Width</Link>
-                </li>
-                <li id={55}>
-                  <Link to="pages/sidebar-left.html">Sidebar Left</Link>
-                </li>
-                <li id={66}>
-                  <Link to="pages/sidebar-right.html">Sidebar Right</Link>
-                </li>
-                <li id={77}>
-                  <Link to="pages/basic-grid.html">Basic Grid</Link>
-                </li>
-              </ul>
-            </li>
             <li id={88}>
               <Link className="drop" href="#">
                 CATEGORIES
               </Link>
               <ul>
                 <li id={99}>
-                  <Link to="#">Productivity</Link>
+                  <Link to="/productivity">Productivity</Link>
                 </li>
                 <li id={100}>
                   <Link className="drop" href="#">
@@ -103,18 +81,15 @@ export function Nav2() {
                   </Link>
                   <ul>
                     <li id={101}>
-                      <Link to="#">Frontend Development</Link>
+                      <Link to="/software">Frontend Development</Link>
                     </li>
                     <li id={102}>
-                      <Link to="#">Web3</Link>
+                      <Link to="/writing">Writing</Link>
                     </li>
                     <li id={103}>
                       <Link to="#">Headless CMS</Link>
                     </li>
                   </ul>
-                </li>
-                <li id={104}>
-                  <Link to="#">Writing</Link>
                 </li>
               </ul>
             </li>
@@ -272,9 +247,7 @@ export function Features() {
       <section className="hoc container clear">
         <div className="sectiontitle">
           <h3 className="heading">FEATURED ARTICLES</h3>
-          <p>
-            Auctor in mattis nisl sed finibus eu dui eget scelerisque dolor.
-          </p>
+          <p>Get ahead of Technology as it evolves</p>
         </div>
         <ul className=" featured">
           {postData &&
