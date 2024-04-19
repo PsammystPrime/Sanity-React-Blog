@@ -32,8 +32,8 @@ export function Post() {
   return (
     <main>
       <section className="container">
-        <h1>Welcome to my blogs</h1>
-        <h2>Have a great read</h2>
+        <h1>Welcome to the Writing Spree</h1>
+        <h2>Escape the writer block</h2>
         <div className="posts">
           {postData &&
             postData.map((post, index) => (
@@ -61,12 +61,12 @@ export function Post() {
     </main>
   );
 }
-export default function All() {
+export default function Writing() {
   return (
     <main>
       <Nav1></Nav1>
       <Nav2></Nav2>
-      <p> Featured Articles </p>
+      <p> Writing Articles </p>
       <Post />
       <Contact></Contact>
       <Footer></Footer>
