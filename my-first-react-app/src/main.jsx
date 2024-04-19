@@ -6,6 +6,9 @@ import "./styles/layout.css";
 import Featured from "./components/Featured.jsx";
 import All from "./components/All.jsx";
 import SinglePost from "./components/article.jsx";
+import Software from "./components/Software.jsx";
+import Productivity from "./components/Productivity.jsx";
+import Writing from "./components/Writing.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +26,18 @@ const router = createBrowserRouter([
   {
     path: "/post/:slug",
     element: <SinglePost />,
+  },
+  {
+    path: "/software",
+    element: <Software />,
+  },
+  {
+    path: "/productivity",
+    element: <Productivity />,
+  },
+  {
+    path: "/writing",
+    element: <Writing />,
   },
 ]);
 
