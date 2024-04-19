@@ -140,8 +140,8 @@ export function Greeting() {
           This is where I document my Frontend Experiences
         </p>
         <footer>
-          <Link className="btn" href="#">
-            Explore Repo &raquo;
+          <Link className="btn" to={"/all"}>
+            Explore Blog &raquo;
           </Link>
         </footer>
       </article>
